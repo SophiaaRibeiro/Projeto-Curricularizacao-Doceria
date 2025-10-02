@@ -51,7 +51,7 @@ nav a {
 }
 
 nav {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%; 
@@ -79,14 +79,20 @@ nav .logo img {
 
 .container-home{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 100px 20px;    
 }
 
-.container-home button{
+.botoes-home {
+    margin-top: 20px; /* espaço entre o texto e os botões */
+    display: flex;
+    gap: 15px; /* espaço entre os botões */
+}
+
+.botoes-home button{
     background-color: var(--cor-secundaria);
     border-radius: var(--border-radius);
     padding: 10px 20px;
@@ -102,8 +108,8 @@ nav .logo img {
     font-size: 25px;
 }
 
-.container-home button:hover{
-    background-color: var(--cor-destque);
+.botoes-home button:hover{
+    transform: scale(1.05);
 }
 
 .container-home button a{
@@ -333,7 +339,7 @@ nav .logo img {
     text-decoration: none;
     color: var(--font-color);
     font-size: 18px;
-    transition: color 0.3s ease;
+    transform: scale(1.05);;
 }
 
 .footer ul li a:hover {
