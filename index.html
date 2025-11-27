@@ -3,138 +3,154 @@
     <head>
         <meta charset="UTF-8">        
         <title>Projeto Curricularização - Doceria</title>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <header>
+        <h1><img src="img/LogoMonicaCakes.png" alt="Logo da Doceria"></h1>
         <nav class="menu-nav">
-            <div class="logo">
-            <a href="#home"><img src="img/logo-monica-cakes.jpeg" alt="Logo da Doceria" width="100" height="100">
-            </a> </div>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home">Início</a></li>
                 <li><a href="#sobrenos">Sobre nós</a></li> 
-                <li><a href="#cardapio">Cárdapio</a></li> 
-                <li><a href="#localidade">Localidade</a></li> 
-                <li><a href="#contato">Contato</a></li>           
+                <li><a href="#destaques">Cardápio</a></li> 
+                <li><a href="#reviews">Avaliações</a></li> 
+                <li><a href="#contato">Contato</a></li>          
             </ul>
         </nav>
-        <main id="home">
-            <div class="container-home">           
-                <div class="home-texto">
-                    <h1>Seja bem-vindo(a) à nossa doceria!</h1>
-                    <p>Descubra o carinho em cada detalhe e permita-se adoçar o seu dia conosco. 💖</p>
-                </div>
-                <div class="botoes-home" >
-                    <button><a href="#cardapio">Nossos cardápio</a></button>
-                    <button><a href="#sobrenos">Sobre Nós</a></button>
-                </div>                
-            </div>            
-        </main>
+        </header>
 
-        <section class="container-sobrenos" id="sobrenos">
-            <div class="sobrenos-content">       
+      <main>          
+            <div class="main-texto">
+                <h1>A doçura que transforma seu dia!</h1>
+                <p>Peça <strong>bolos</strong> e <strong>brigadeiros gourmet</strong> que curam a alma,
+                entregues na sua casa.</p>
+            </div>
+          
+          
+          <div class="main-bolodestaque">
+            <img src="img/boloferrerorocher.png" id="mainImage" class="main" alt="Bolo Ferrero Rocher"> 
+          </div>
+
+          <div class="miniaturas">
+            <img src="img/boloferrerorocher.png" alt="Bolo Ferrero Rocher" onclick="trocarImagem(this)">
+            <img src="img/Macarons_Festivo_Main.png" alt="Macarons Festivo" onclick="trocarImagem(this)">
+            <img src="img/Chocolate_Classico_Crocante_Main.png" alt="Chocolate Clássico Crocante" onclick="trocarImagem(this)">
+          </div>
+      </main>
+
+        <section class="container-sobrenos" id="sobrenos">  
                 <div class="sobrenos-img">
-                    <img src="img/Logotipo-cakes_page-0001.jpg" alt="logotipo monica doceria">
+                <img src="img/Foto_de_Perfil.png"
+                alt="Foto do perfil do Instagram">
                 </div>                
                 <div class="sobrenos-texto">
-                    <h2>Sobre Nós</h2>
-                  <p>Nossa doceria nasceu do amor por transformar simples ingredientes em momentos inesquecíveis.
-                    Cada doce que produzimos carrega carinho, dedicação e a vontade de espalhar alegria em forma de sabor.
-                    Aqui acreditamos que comer um doce vai muito além de matar a vontade: é viver uma experiência única, 
-                    repleta de afeto e cuidado em cada detalhe. Nosso compromisso é entregar qualidade, aconchego e aquele gostinho especial que fica guardado na memória. Queremos estar presentes em suas celebrações, conquistas e também nos pequenos mome
-                    ntos do dia a dia, tornando-os ainda mais doces.
-                  </p>
-                </div>              
-            </div>
+                <h2>Sobre a Mônica Cakes</h2>
+                <p>Nossa doceria nasceu do <em>amor</em> por transformar simples ingredientes em momentos inesquecíveis.
+                Acreditamos que comer um doce vai muito além de matar a vontade:
+                é viver uma experiência única, repleta de <em>afeto</em> e <em>cuidado</em> em cada detalhe.</p>
+                <p>Cada doce que produzimos carrega <em>carinho</em>, <em>dedicação</em> e a vontade de espalhar <em>alegria</em>
+                em forma de sabor. Nosso compromisso é entregar <em>qualidade</em>,
+                <em>aconchego</em> e aquele gostinho <em>especial</em> que fica guardado na memória.</p>
+                <p>Queremos estar presentes em suas celebrações, conquistas e também nos
+                pequenos momentos do dia a dia, tornando-os ainda mais doces.</p>
+                </div>   
         </section>
 
-        <section class="container-cardapio" id="cardapio">
-            <h2>Nosso cardápio</h2>
-            <div class="cardapio-grid">
+<section id="destaques">
+  <h2>Destaques</h2>
+  <div class="destaques-container">
+    <article>
+      <img src="img/Ninho_Nutella_Supreme.png" alt="Bolo de Ninho e Nutella">
+      <h3>Ninho & Nutella Supreme</h3>
+      <p>Massa fofinha de baunilha recheada com  <strong>Ninho</strong> e generosas camadas de <strong>Nutella</strong>.
+      Finalizado com cobertura de chocolate.</p>
+    </article>
 
-                <div class="card">
-                    <img src="img/chocolate-morango.jpeg" alt="Bolo de chocolate">
-                    <h3>Bolo de chocolate</h3>
-                </div>
+    <article>
+      <img src="img/Macarons_Festivo_Destaques.png" alt="Macarons Festivo">
+      <h3>Doçura Festivo com Beijinho </h3>
+      <p>Elegante e colorido, combina massa leve com recheio <strong>cremoso</strong>.
+      Trazendo um <em>toque sofisticado, carinho e delicadeza ao bolo</em>.</p>
+    </article>
 
-                <div class="card">
-                    <img src="img/ninho-bolo-cima.jpeg" alt="Bolo de Ninho com morango">
-                    <h3>Bolo de Ninho com morango</h3>
-                </div>
+    <article>
+      <img src="img/Chocolate_Classico_Crocante_Destaques.png" alt="Bolo de Chocolate Clássico Crocante">
+      <h3>Chocolate Clássico Crocante</h3>
+      <p>Feito com massa de <strong>chocolate</strong>, recheio <strong>cremoso</strong> e camadas de crocante de chocolate.
+      Finalizado com cobertura rica em <em>cacau</em>.</p>
+    </article>
+  </div>
+</section>
 
-                <div class="card">
-                    <img src="img/docinhos.jpeg" alt="docinhos brigadeiro e beijinho">
-                    <h3>Brigadeiro e Beijinho</h3>
-                </div>
+<section id="reviews">
+      <h2>Reviews</h2>  
+      
+      <div class="container-reviews">
+      <img src="img/seta-esquerda-carrossel.png" alt="Seta para a Esquerda"
+      class="setas" id="setaesquerda">
 
-                <div class="card">
-                    <img src="img/docinhos-ninho-nutella.jpeg" alt="Docinhos de ninho com nutella">
-                    <h3>Docinhos de ninho com nutella</h3>
-                </div>
+      <div class="review-bolo">
+        <img src="img/bolo-ninho-nutella.png" alt="bolo ninho nutella">
+      </div>
 
-                <!-- <div class="card">
-                    <img src="img/chocolate-morango.jpeg" alt="Bolo de chocolate">
-                    <h3>Bolo de chocolate</h3>
-                </div> -->
-            </div>
-        </section>
+      <article>
+        <p>Oh minha linda você me fez chorar quando eu abri o bolo que foi o primeiro,
+      eu chorei muito porque foi o que imaginei para minha filha e ver se realizando
+      não tem como se emocionar nós tínhamos um sonho de sair tudo <em>perfeito</em>
+      e você com seu trabalho <em>incrível</em> colaborou para que fosse <em>perfeito</em>. </p>
+      </article>
 
-        <section class="localizacao" id="localidade">
-            <h2>Onde Estamos</h2>            
-                <p>Venha nos visitar! Estamos de portas abertas para adoçar o seu dia 🍰</p>
-                    <div class="map-container">                    
-                        <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58344.486852933594!2d-46.40296737394249!3d-23.941676503946162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1ba30765e50d%3A0xc4b988ed009a316b!2sNautica%20Tubulacoes!5e0!3m2!1spt-BR!2sbr!4v1758906304267!5m2!1spt-BR!2sbr" 
-                        width="600" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>                 
-                        <adress><p>Endereço: Rua luiz de gra, São Vicente, Brazil 11350.310</p></adress>
-                    </div>           
-        </section>
+      <img src="img/seta-direita-carrossel.png" alt="Seta para a direita"
+      class="setas" id="setadireita">
 
-        <section class="container-ctt"  id="contato">
-            <h2>Entre em contato conosco</h2>
-            <p class="subtitulo-ctt">
-                Fique à vontade para tirar qualquer dúvida ou fazer seu pedido 💖
-            </p>
-            <div class="redes-sociais">
-                <div class="perfil">
-                <img src="img/Foto do perfil de monica_cakesconfeitaria.png" alt="Foto do perfil do Instagram">
-                </div>           
-                <div class="links-contato">
-                    <ul>
-                        <li>
-                            <img src="img/icons8-instagram-logo-50.png">
-                            <a href="https://www.instagram.com/monica_cakesconfeitaria/" target="_blank">Instagram</a>
-                         
-                        </li>
-                       <li>
-                            <img src="img/icons8-facebook-novo-50.png">
-                            <a href="#" target="_blank">Facebook</a>
-                       </li>
+        <!-- 
+        <article>
+        <p>Trabalho <em>lindo</em>, como sempre </p>
+        </article>
+        <article>
+        <p>Que <em>lindeza</em>aaa... Que nostalgia ver algo do tom e jerry,
+          <em>arrasou</em> no bolo e na criatividade </p>
+        </article>
+        <article>
+        <p>Magali
+          Passando para agradecer por todo <em>apoio</em> e <em>carinho</em> que tiveram conosco!
+          Você é <em>SENSACIONAL</em> a decoração ficou simplesmente <em>linda</em>!!
+          Você está de <em>parabéns</em>!</p>
+        </article> -->
+      </div>
+</section>
 
-                        <li>
-                             <img src="img/icons8-whatsapp-50.png">
-                            <a href="#" target="_blank">WhatsApp</a>
-                        </li>
-                    </ul>
-                </div>
-        </section>
+    <section class="Contatos" id="contato">
+      <img src="img/LogoMonicaCakes.png"
+      alt="Logo da Confeitaria">
 
-        <footer class="footer">
-            <h3>Monica Cakes Confeitaria</h3>
+      <h1>Mônica Cakes Confeitaria</h1>
+      <nav><ul>
+      <li>       
+        <a href="https://www.instagram.com/monica_cakesconfeitaria/"
+        target="_blank"><img src="img/icons8-instagram-logo-50.png" alt="Símbolo do Instagram"></a>
+      </li>
+      <li>
+          <a href="#"><img src="img/icons8-facebook-novo-50.png" alt="Símbolo do Facebook"></a>
+      </li>
+      <li>
+           <a href="https://wa.me/13985991929" target="_blank"><img src="img/icons8-whatsapp-50.png" alt="Símbolo do Whatsapp"></a>
+      </li>
+      </ul></nav>
+    </section>
+    
+        <footer>
+            <h1>Mônica Cakes Confeitaria</h1>
+                <nav>
                 <ul>
                     <li><a href="#sobrenos">Sobre Nós</a></li>
-                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#destaques">Cardápio</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#contato">Contato</a></li>
-                    <li><a href="#localizacao">Localização</a></li>
                 </ul>
-            <p>&copy; 2025 Monica Cakes Confeitaria. Todos os direitos reservados.</p>
+                </nav>
         </footer>
+        <script src="js/script.js"></script>
     </body>
 </html>
