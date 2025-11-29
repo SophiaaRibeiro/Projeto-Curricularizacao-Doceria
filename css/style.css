@@ -139,14 +139,13 @@ main > .miniaturas::before{
   transition: transform 0.2s;
   z-index: 1;
   position: relative;  
- 
 }
 
 .miniaturas>img:hover {
   transform: translateY(-5px);
 }
 
-.btn-saiba{
+button {
   padding: 20px 40px;
   border-radius: 30px;
   background-color: #3C1F1E;
@@ -156,12 +155,12 @@ main > .miniaturas::before{
   border: 3px solid #3C1F1E;
 }
 
-.btn-saiba>a{
+button>a{
   text-decoration: none;
   color: #FFF3E9;
 }
 
-.btn-saiba:hover{
+button:hover{
   background-color: #A86B4C;
   border: 3px solid #ffffff;
   transition: 0.2s;
@@ -178,7 +177,6 @@ h2 {
 
 .container-sobrenos{
   background: linear-gradient(to left, #FFF3E9, #d8ac8a50);
-    /* background-color: #E39D68; */
     padding: 50px; 
     display: flex;
     align-items: center;
@@ -186,11 +184,30 @@ h2 {
     gap: 30px;
 }
 
+.sobrenos-img {
+    position: relative;       
+    display: inline-block;     
+}
+
 .sobrenos-img>img{
-    width: 100%;
     max-width: 800px;
     max-height: 600px;
-    border-radius: 5px;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+}
+
+.sobrenos-img::before {
+    content: "";
+    position: absolute;
+    width: 400px;            
+    height: 400px;
+    background: #dd9664;     
+    border-radius: 50%;     
+    z-index: 1;             
+    left: 50%;
+    top: 64%;
+    transform: translate(-50%, -50%); 
 }
 
 .sobrenos-texto {
@@ -234,8 +251,6 @@ h2 {
   margin: 0 auto 30px auto;
   text-align: center;
   padding: 20px;
-
-
 }
 
 article {
@@ -286,7 +301,7 @@ article>h3 {
   justify-content: center;
   gap: 20px;
   padding: 70px;
-  margin: 30px;
+  margin: 50px;
   flex-wrap: wrap;
   text-align: center;
   background-color: linear-gradient(to left, #836767, #bda390);
@@ -309,27 +324,25 @@ article>h3 {
   padding: 20px;
   width: 500px;
   height: 250px;
-  
 }
 
 .review-item>article>p {
   font-size: 1rem;
-  margin-top: 15px;
+  margin-top: 10px;
   color: #FFF3E9;
-  
 }
 
 .review{
   display: flex; 
   border-radius: 10px;
   padding: 10px;
-  width: 380px;
-  height: 280px;
+  max-width: 380px;
+  max-height: 280px;
   align-items: center;
 }
 
 .reviews-wrapper {
-  width: 350px;            
+  max-width: 350px;            
   overflow: hidden; 
 }
 
@@ -339,11 +352,12 @@ article>h3 {
   flex-direction: column;
   align-items: center;
   text-align: center;
- 
 }
 
 .review-img {
-  width: 350px; 
+  max-width: 350px;
+  max-height: 350px; 
+  margin-bottom: 20px;
 }
 
 .reviews-wrapper-inner {
